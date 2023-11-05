@@ -1,0 +1,182 @@
+body {
+    background-color: rgb(227,227,227,.75);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 99vw;
+}
+
+/* background-color: #e7dad1;     this is the beige background*/
+nav {
+    width: 100%;
+    background: #e3e3e3b8;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 5vh;
+    margin-top: 0;
+    color: #977856;
+    border-bottom: 1px solid black;
+}
+nav h5 {
+    margin-left: 15px;
+    font-size: 1em;
+    font-family: 'Nanum Myeongjo', serif;
+}
+#nav-bar-links {
+    list-style-type: none;
+    margin: 0px;
+    padding: .5em;
+    text-align: right;
+}
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #977856;
+}
+nav a:visited {
+
+}
+nav a:hover {
+    color: #0c1b26;
+}
+main {
+    margin: 0%;
+    height: 100vh;
+    background: url("./Images/Formal-split-cropped.jpg");
+    background-size: 100%; auto;
+    background-repeat: no-repeat;
+    background-color: #e3e3e3b8;
+}
+
+.hero {
+    display: flex;
+    min-height: 65vh;
+    flex-direction: column;
+    width: 100vw;
+}
+.hero div {
+    text-align: center;
+}
+#title-banner {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+    background-color: rgb(227,227,227,.75);
+    margin: 2em 0em 8em 0em;
+    padding: 0em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#announcement {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: .8em;
+    background-color: rgb(227,227,227,.75);
+    padding: 0em;
+    margin: 12em 1em 0 1em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#date {
+    margin-top: 3em;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+    background-color: rgb(227,227,227,.75);
+    padding: 0em;
+    margin: 2em 2em 2em 2em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#story-title {
+    margin: 5em 5em 5em 5em;
+    border-top: 1px solid #0c1b26;
+    border-bottom: 1px solid #0c1b26;
+    background-color: #e3e3e3b8;
+    padding: .5em 1em .5em 1em;
+    text-align: center;
+
+}
+.story-container {
+    background-image: url("./Images/Formal-stoop-crop.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.story-content {
+    background-color: rgb(242, 242, 242, .50);
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1em;
+    color: black;
+    padding: 4em;
+    font-weight: 800;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+footer {
+    background-color: #e3e3e3;
+    height: 12em;
+    color: #977856;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 2em;
+    border-top: 1px solid black;
+}
+@media(min-width: 600px) {
+    body {
+        margin: auto;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+    }
+    main {
+        width: 80vw;
+        margin: auto;
+        background-size: contain;
+        background-position-x: center;
+    }
+    
+    .hero {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    }
+    #title-banner {
+        flex: 3;
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    #announcement {
+        width: 50vw;        
+        margin: 6em auto 2em auto;
+        border-radius: 25px;
+        border: 1px solid black;
+    }
+    #date {
+        width: 40vw;
+        margin: 2em auto 2em auto;
+        border-radius: 25px;
+        border: 1px solid black;
+    }
+    .story-container {
+        background-size: 50%;
+    }
+    #story-title {
+        margin-top: 20em;
+    }
+    footer {
+        padding-top: 4em;
+    }
+}
